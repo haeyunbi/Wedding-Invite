@@ -1,0 +1,84 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1400"
+     preserveAspectRatio="none">
+
+  <defs>
+    <style>
+      .paper {
+        fill: #e8bfc4;
+        fill-rule: evenodd;
+      }
+      .vine {
+        fill: none;
+        stroke: #a7ad83;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .leaf {
+        fill: #b5bc91;
+        stroke: #929b70;
+        stroke-width: 1.5;
+      }
+      .petal {
+        fill: #fff8f3;
+        stroke: #d9a9b3;
+        stroke-width: 2;
+      }
+      .center {
+        fill: #d5ae72;
+      }
+    </style>
+
+    <g id="flower">
+      <ellipse class="petal" cx="0" cy="-10" rx="5.5" ry="10"/>
+      <ellipse class="petal" cx="0" cy="-10" rx="5.5" ry="10"
+               transform="rotate(60)"/>
+      <ellipse class="petal" cx="0" cy="-10" rx="5.5" ry="10"
+               transform="rotate(120)"/>
+      <ellipse class="petal" cx="0" cy="-10" rx="5.5" ry="10"
+               transform="rotate(180)"/>
+      <ellipse class="petal" cx="0" cy="-10" rx="5.5" ry="10"
+               transform="rotate(240)"/>
+      <ellipse class="petal" cx="0" cy="-10" rx="5.5" ry="10"
+               transform="rotate(300)"/>
+      <circle class="center" r="4"/>
+    </g>
+
+    <g id="sprig">
+      <path class="vine" d="M0 0 C25 35 -12 65 8 95
+                             S-8 145 8 180
+                             S-5 225 8 260"/>
+
+      <path class="leaf" d="M8 35 Q-18 20 -15 5 Q7 10 8 35Z"/>
+      <path class="leaf" d="M2 65 Q25 45 29 28 Q6 35 2 65Z"/>
+      <path class="leaf" d="M5 105 Q-18 88 -19 73 Q4 80 5 105Z"/>
+      <path class="leaf" d="M2 140 Q25 120 28 105 Q7 111 2 140Z"/>
+      <path class="leaf" d="M7 185 Q-15 167 -17 152 Q4 161 7 185Z"/>
+      <path class="leaf" d="M4 225 Q24 207 28 190 Q7 200 4 225Z"/>
+
+      <use href="#flower" x="13" y="18" transform="translate(13 18) scale(1.1)"/>
+      <use href="#flower" transform="translate(-8 92) scale(.8)"/>
+      <use href="#flower" transform="translate(17 168) scale(.9)"/>
+      <use href="#flower" transform="translate(-1 245) scale(.75)"/>
+    </g>
+  </defs>
+
+  <!-- Blush paper ring with jagged OUTER and INNER edges -->
+      <path class="paper" d="
+        M 10,10
+        H 990
+        V 1390
+        H 10
+        Z
+
+        M 25,25
+        V 1375
+        H 975
+        V 25
+        Z
+
+  "/>
+
+</svg>
